@@ -1,0 +1,11 @@
+{
+  "name": "Hunter Survivors",
+  "short_name": "H. Survivors",
+  "description": "Fan game de Hunter x Hunter tipo survivors.",
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#120d24",
+  "theme_color": "#120d24",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

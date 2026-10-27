@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Hunter Survivors: la marea de hormigas</title>
+<meta name="description" content="Fan game de Hunter x Hunter tipo survivors: elige a Gon, Killua, Kurapika, Leorio o Hisoka, sube de nivel tus habilidades de Nen y aguanta 15 minutos contra la marea de hormigas. Gratis en el navegador y el móvil.">
+<link rel="canonical" href="https://adrianezd.github.io/hunter-survivors/">
+<meta name="theme-color" content="#120d24">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<meta property="og:title" content="Hunter Survivors: la marea de hormigas">
+<meta property="og:description" content="Aguanta 15 minutos con tus habilidades de Nen. Fan game no oficial de Hunter x Hunter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adrianezd.github.io/hunter-survivors/">
+<meta property="og:locale" content="es_ES">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<canvas id="cv"></canvas>
+<div id="hud" hidden>
+  <div class="xp"><i id="xpbar"></i><span id="lvl">Nv 1</span></div>
+  <div class="top">
+    <div class="hp"><i id="hpbar"></i><span id="hptxt"></span></div>
+    <div id="timer">00:00</div>
+    <div class="right"><span id="kills">💀 0</span><span id="goldc">🪙 0</span></div>
+  </div>
+  <div id="icons"></div>
+  <div id="bossbar" hidden><span id="bossname"></span><div class="bb"><i id="bossfill"></i></div></div>
+</div>
+<button id="pauseBtn" onclick="pause()" aria-label="Pausa" hidden>⏸</button>
+<div id="stick" hidden><div id="knob"></div></div>
+<div id="banner"></div>
+<div id="ov" hidden></div>
+<script src="js/data.js?v=1"></script>
+<script src="js/game.js?v=1"></script>
+</body>
+</html>
